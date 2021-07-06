@@ -1,26 +1,109 @@
 body {
-  background: #efefef;
   margin-right: auto;
   margin-left: auto;
-  max-width: 75vw;
   margin-top: 0;
+  font-family: sans-serif;
 }
+
+/* header */
 
 #header ul {
   list-style-type: none;
-  margin: 0;
-  padding-left: 20%;
+  margin: 0 auto;
   overflow: hidden;
   text-transform: uppercase;
   background-color: black;
   position: fixed;
-  width: 55.72%;
+  width: 100%;
   opacity: 0.8;
+  font-size: 1.5em;
+  padding: 0%;
 }
+
+#header ul li {
+  float: left;
+  padding: 1%;
+}
+
+#header ul li a {
+  color: whitesmoke;
+  text-align: center;
+  padding: 0px 0px 0px 87px;
+  text-decoration: none;
+}
+
+#header .dropdown {
+  display: none;
+}
+
+/* section 1 */
+
+#starwars {
+  padding: 5% 15% 0% 15%;
+}
+
+#starwars > article {
+  float: left;
+  margin: 10px;
+}
+
+#starwars article {
+  width: 42%;
+  font-size: 1.8em;
+}
+
+#starwars article img {
+  padding-left: 20%;
+}
+
+#starwars img {
+  width: 100%;
+}
+
+#kiloren {
+  width: 100%;
+}
+
+#storm {
+  width: 100%;
+  height: 300px;
+}
+
+/* section 2 */
+
+#galaxy {
+  margin: 3% 0% 3% 0%;
+}
+
+#galaxy h2 {
+  text-align: center;
+  font-size: 4em;
+}
+
+#galaxy div {
+  margin: 3% 16% 0% 12%;
+}
+
+#galaxy article div > img {
+  float: left;
+  margin: 10px;
+}
+
+#galaxy article div p {
+  font-size: 1.8em;
+}
+
+#galaxy article div img {
+  width: 37%;
+  margin: 0%;
+  padding-right: 5%;
+}
+
+/* footer */
 
 #footer ul {
   list-style-type: none;
-  padding-left: 16%;
+  padding-left: 19%;
   overflow: hidden;
   float: left;
 }
@@ -36,79 +119,6 @@ body {
   padding: 10% 5% 0% 5%;
 }
 
-#header ul li {
-  float: left;
-}
-
-#header ul li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-#header .dropdown {
-  display: none;
-}
-#starwars {
-  margin: 5% auto;
-  padding: 0% 25% 0% 25%;
-}
-
-#starwars > article {
-  float: left;
-  margin: 10px;
-}
-
-#starwars article {
-  width: 39%;
-}
-
-#starwars article img {
-  padding-left: 20%;
-}
-
-#starwars img {
-  width: 100%;
-}
-
-#kiloren {
-  width: 100%;
-  height: 500px;
-}
-
-#storm {
-  width: 100%;
-  height: 300px;
-}
-#galaxy {
-  margin: 2% 0% 3% 0%;
-}
-
-#galaxy h2 {
-  text-align: center;
-}
-
-#galaxy div {
-  margin: 0% 25% 0% 25%;
-}
-
-#galaxy article div > img {
-  float: left;
-  margin: 10px;
-}
-
-#galaxy article div p {
-  width: 92%;
-}
-
-#galaxy article div img {
-  width: 39%;
-  margin: 0%;
-  padding-right: 3%;
-}
-
 footer {
   background-image: url(../Assets/darthvader_2x.jpg);
   background-repeat: no-repeat;
@@ -116,7 +126,7 @@ footer {
   background-position-x: center;
   background-position-y: 0%;
   width: 100%;
-  height: 300px;
+  height: 340px;
   color: silver;
   margin-top: -1%;
   text-align: center;
@@ -127,29 +137,16 @@ footer div {
 }
 
 #footer .icon {
-    padding-top: 1%;
-  }
+  padding-top: 1%;
+}
 
 .parallax-window {
   min-height: 400px;
 }
 
-
 /* RWD tablet */
 
-
-@media only screen  and (max-width: 1024px) {
-  body {
-    background: #efefef;
-    margin-right: auto;
-    margin-left: auto;
-    max-width: 75vw;
-    margin-top: 0;
-  }
-
-  #header {
-    height: 320px;
-  }
+@media only screen and (max-width: 1024px) {
 
   #header .dropdown {
     display: inline;
@@ -165,7 +162,7 @@ footer div {
     width: 5.4%;
     opacity: 0.8;
     margin: 0;
-    padding-left: 69%;
+    padding: 2% 4% 2% 91%;
   }
 
   .dropdown {
@@ -173,7 +170,7 @@ footer div {
   }
 
   #myDropdown img {
-      padding-right: 93%;
+    padding: 2% 90% 0% 0%;
   }
 
   .dropdown-content {
@@ -181,7 +178,7 @@ footer div {
     display: none;
     position: fixed;
     background-image: url(../Assets/header-bg.png);
-    min-width: 644px;
+    min-width: 1024px;
     overflow: auto;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
@@ -223,12 +220,13 @@ footer div {
 
   #footer .icon {
     display: flex;
-    width: 70%;
+    width: 55%;
   }
 
   #footer .icon li {
     width: 100%;
     text-align: left;
+    padding-top: 2%;
   }
 
   #footer :last-child img {
@@ -249,8 +247,7 @@ footer div {
   }
 
   #starwars {
-    margin: 5% auto;
-    padding: 0% 25% 0% 25%;
+    padding: 0% 5% 0% 5%;
   }
 
   #starwars article {
@@ -262,16 +259,13 @@ footer div {
     display: none;
   }
 
-  #kiloren {
-    height: 320px;
-  }
 
   #storm {
     width: 100%;
     height: 300px;
   }
   #galaxy {
-    margin: 2% 0% 3% 0%;
+    margin: 2% 20% 3% 20%;
   }
 
   #galaxy h2 {
@@ -279,16 +273,12 @@ footer div {
   }
 
   #galaxy div {
-    margin: 0% 25% 0% 25%;
-  }
-
-  #galaxy article div p {
-    width: 92%;
+    margin: 0% ;
   }
 
   #galaxy article div img {
-    width: 86%;
-    margin: 0% 0% 4% 0%;
+    width: 100%;
+    padding: 0% 0% 5% 0%;
   }
 
   #galaxy article .text {
@@ -303,33 +293,42 @@ footer div {
   }
 }
 
-
-
 /* RDW mobile */
 
 @media only screen and (min-width: 320px) and (max-width: 768px) {
-  #header {
-    height: 180px;
-  }
   .dropdown-content {
-    min-width: 310px;
+    min-width: 414px;
   }
 
+  #myDropdown img {
+    padding: 3% 84% 0% 0%;
+    width: 6%;
+  }
+
+  
   #starwars article {
-      font-size: 63%;
+    font-size: 1em;
+  }
+
+  #starwars article{
+      width: 94%;
   }
 
   #kiloren {
     height: 200px;
   }
 
+  #galaxy {
+      margin : 2% 16% 3% 16%;
+      width: 60%;
+  }
+
   #galaxy h2 {
-      padding: 0% 11% 0% 11%;
+    font-size: 2em;
   }
 
   #galaxy div {
-    margin: 0% 11% 0% 11%;
-    font-size: 10%;
+    font-size: 0.5em;
   }
 
   #galaxy article div img {
