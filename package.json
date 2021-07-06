@@ -1,0 +1,27 @@
+{
+  "name": "prismamulti",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JGPrime/Prisma.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JGPrime/Prisma/issues"
+  },
+  "homepage": "https://github.com/JGPrime/Prisma#readme",
+  "dependencies": {
+    "jquery": "^3.6.0"
+  },
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  },
+  "scripts": {
+    "server":"lite-server",
+    "start": "npm run server" 
+}
+}
