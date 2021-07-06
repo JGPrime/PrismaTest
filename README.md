@@ -4,7 +4,7 @@ Requirements Node and npm (see NodeJS Install grunt-cli globally: npm install -g
 
 git clone git@github.com:JGPrime/PrismaTest.git npm install Included tasks Workflows These are high level tasks that build up common work flows in development.
 
-Install
+#Install
 
 npm install
 
